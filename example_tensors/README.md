@@ -2,7 +2,7 @@
 
 The following are the available tensors as well as the number of non-zero fibers in each:
 
-| Tensor | # non-zero tensors|
+| Tensor | # non-zero fibers|
 |---------| ------------------|
 | `t0` | 15 |
 |`lbnl-network` | 6,832,482 |
