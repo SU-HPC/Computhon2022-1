@@ -27,7 +27,7 @@ module load centos7.3/lib/cuda/10.1
 module load centos7.3/lib/openmpi/1.8.8-gcc-4.8.5
 
 # Compile the code
-g++ -O3 fibers.cc -lgomp -o exe
+g++ -O3 fibers.cc -lgomp -fopenmp -o exe
 
 # Execute with input file and output
 srun ./exe example_tensors/t0.tns 
