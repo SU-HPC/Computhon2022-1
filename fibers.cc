@@ -150,7 +150,7 @@ unsigned long long naive_count_coo(unsigned int nnz, unsigned int order, unsigne
         unordered_set<vector<unsigned int>, vector_hash<unsigned int>, vector_equal<unsigned int>> fibers;
         vector<unsigned int> one_nnz(order-1);
         // Determine the fiber that each non-zero belongs to and add it to the set
-        for (unsigned int i = 0; i < nnz; i++){
+        for (unsigned long long i = 0; i < nnz; i++){
             // Construct the fiber ID using its dimensions on all modes except `m`
             for (int o = 0; o < order-1; o++){
                 one_nnz[o] = coord[modes_to_check[o]][i];
